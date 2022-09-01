@@ -3,10 +3,10 @@ import random
 
 class Gallows:
     def __init__(self):
-        self.limit = self.choose_limit() # ввод и проверка лимита
+        self.limit = self.choose_limit()
         self.player_word = ''
         self.letters = []
-        self.word = self.take_word()  # выбор слова при инициализации
+        self.word = self.take_word()
         self.play()
 
     def choose_limit(self):
@@ -38,7 +38,7 @@ class Gallows:
         print(self.letters)
 
     def make_step(self):
-        lit = input('enter the letter: ')
+        lit = input('enter the letter or word: ')
 
         if lit == 'list':
             self.show_letter_list()
